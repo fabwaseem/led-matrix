@@ -14,8 +14,13 @@ $ yarn add easy-led-matrix
 
 ```
 import { LedMatrix } from 'easy-led-matrix';
+#or
+import { LedMatrix } from "https://www.unpkg.com/easy-led-matrix@1.1.1/index.min.js";
 
-const matrix = new LedMatrix(container, config)
+const container = document.querySelector(".container");
+const matrix = new LedMatrix(container, config);
+
+
 ```
 
 ## Config

@@ -11,6 +11,7 @@ export class LedMatrix {
     this.background = config.background || "#000000";
 
     this.container = container;
+    this.initialized = false;
     this.canvas = null;
     this.context = null;
     this.gridContext = null;
@@ -21,8 +22,6 @@ export class LedMatrix {
     this.columns = null;
     this.rows = null;
     this.interval = null;
-
-    this.initialize();
   }
 
   updateCells() {
@@ -142,7 +141,8 @@ export class LedMatrix {
     this.interval = setInterval(() => this.draw(), 1000 / this.fps);
   }
 
-  initialize() {
+  init() {
+    if (this.initialized) return;
     let container = this.container;
     container.style.setProperty("background-color", this.background);
 
@@ -155,6 +155,7 @@ export class LedMatrix {
 
     window.addEventListener("resize", () => this.refresh());
     this.refresh();
+    this.initialized = true;
   }
 
   updateConfig(config) {
