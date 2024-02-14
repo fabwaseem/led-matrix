@@ -19,6 +19,7 @@ import { LedMatrix } from "https://www.unpkg.com/easy-led-matrix@1.1.1/index.min
 
 const container = document.querySelector(".container");
 const matrix = new LedMatrix(container, config);
+matrix.init()
 
 
 ```

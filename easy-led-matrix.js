@@ -132,6 +132,7 @@ export class LedMatrix {
   }
 
   refresh() {
+    container.style.setProperty("background-color", this.background);
     this.canvas.width = this.gridCanvas.width = this.container.clientWidth;
     this.canvas.height = this.gridCanvas.height = this.container.clientHeight;
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
@@ -143,15 +144,12 @@ export class LedMatrix {
 
   init() {
     if (this.initialized) return;
-    let container = this.container;
-    container.style.setProperty("background-color", this.background);
-
     let canvas = document.createElement("canvas");
     this.canvas = canvas;
     this.context = canvas.getContext("2d");
     this.gridCanvas = document.createElement("canvas");
     this.gridContext = this.gridCanvas.getContext("2d");
-    container.appendChild(canvas);
+    this.container.appendChild(canvas);
 
     window.addEventListener("resize", () => this.refresh());
     this.refresh();
