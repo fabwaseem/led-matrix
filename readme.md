@@ -5,9 +5,9 @@ Easily turn a div into a beautiful LED matrix with full customizations.
 ## Installation
 
 ```
-npm install easy-led-matrix
+npm install @fabwaseem/easy-led-matrix
 # or
-$ yarn add easy-led-matrix
+$ yarn add @fabwaseem/easy-led-matrix
 ```
 
 ## Usage
