@@ -1,4 +1,4 @@
-class LedMatrix {
+export class LedMatrix {
   constructor(container, config) {
     this.shape = config.shape;
     this.size = config.size;
