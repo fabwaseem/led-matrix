@@ -4,7 +4,7 @@ export class LedMatrix {
   draw(): void;
   setGrid(): void;
   refresh(): void;
-  initialize(): void;
+  init(): void;
   updateConfig(config: LedMatrixConfig): void;
 }
 

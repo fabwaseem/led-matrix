@@ -1,12 +1,24 @@
 {
   "name": "easy-led-matrix",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A simple library to create beautiful led matrix easily with full customizations.",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Waseem Anjum",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabwaseem/led-matrix.git"
+  },
+  "homepage": "https://fabwaseem.github.io/easy-led-matrix",
+  "keywords": [
+    "led",
+    "matrix",
+    "led-matrix",
+    "easy-led-matrix",
+    "led-matrix-library"
+  ],
   "license": "MIT"
 }
