@@ -145,14 +145,13 @@ export class LedMatrix {
   initialize() {
     let container = this.container;
     container.style.setProperty("background-color", this.background);
-    container.className = "container";
 
     let canvas = document.createElement("canvas");
+    this.canvas = canvas;
+    this.context = canvas.getContext("2d");
     this.gridCanvas = document.createElement("canvas");
     this.gridContext = this.gridCanvas.getContext("2d");
     container.appendChild(canvas);
-    this.canvas = canvas;
-    this.context = canvas.getContext("2d");
 
     window.addEventListener("resize", () => this.refresh());
     this.refresh();
