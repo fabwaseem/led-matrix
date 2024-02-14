@@ -1,6 +1,6 @@
 {
   "name": "easy-led-matrix",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple library to create beautiful led matrix easily with full customizations.",
   "main": "index.min.js",
   "types": "index.d.ts",

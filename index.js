@@ -1,4 +1,4 @@
-class LedMatrix {
+export class LedMatrix {
   constructor(t, s) {
     (this.shape = s.shape || "square"),
       (this.size = s.size || 12),
@@ -148,4 +148,3 @@ class LedMatrix {
       this.refresh();
   }
 }
-export default LedMatrix;

@@ -1,5 +1,5 @@
 export class LedMatrix {
-  constructor(container: HTMLElement, config: LedMatrixConfig);
+  constructor(container: HTMLElement, config?: LedMatrixConfig);
   updateCells(): void;
   draw(): void;
   setGrid(): void;
@@ -9,13 +9,13 @@ export class LedMatrix {
 }
 
 export interface LedMatrixConfig {
-  shape: "square" | "circle";
-  size: number;
-  color: string;
-  amount: number;
-  gap: number;
-  litColor: string;
-  fps: number;
-  noise: number;
-  background: string;
+  shape?: "square" | "circle";
+  size?: number;
+  color?: string;
+  amount?: number;
+  gap?: number;
+  litColor?: string;
+  fps?: number;
+  noise?: number;
+  background?: string;
 }
