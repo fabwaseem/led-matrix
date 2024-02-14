@@ -132,7 +132,7 @@ export class LedMatrix {
   }
 
   refresh() {
-    container.style.setProperty("background-color", this.background);
+    this.container.style.setProperty("background-color", this.background);
     this.canvas.width = this.gridCanvas.width = this.container.clientWidth;
     this.canvas.height = this.gridCanvas.height = this.container.clientHeight;
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
